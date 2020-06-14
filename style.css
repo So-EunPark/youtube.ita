@@ -43,6 +43,8 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* HEADER */
+
 header {
   display: flex;
   align-items: center;
@@ -71,7 +73,7 @@ header .icons .fa-search {
   margin-right: var(--padding);
 }
 
-/* Video Player */
+/* VIDEO PLAYER */
 .player {
   position: sticky;
   top: 0;
@@ -85,7 +87,7 @@ header .icons .fa-search {
   max-width: 900px;
 }
 
-/* info */
+/* INFO */
 .infoAndUpNext > .info {
   padding: var(--padding);
   
@@ -131,78 +133,79 @@ header .icons .fa-search {
 }
 
 
-/* Action Buttons */
-.actions {
+/* INFO > Action Buttons */
+.info .actions {
   display: flex;
   justify-content: space-around;
   margin: var(--padding) 0;
 }
 
-.actions button {
+.info .actions button {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
 
-.actions button i {
+.info .actions button i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
   font-size: 16px;
 }
 
-.actions button i.active {
+.info .actions button.active {
   color: var(--blue-color);
 }
 
-/* channel */
+/* INFO> channel */
 
-.channel {
+.info .channel {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
 }
 
-.channel .metadata {
+.info .channel .metadata {
   display: flex;
   align-items: center;
 }
 
-.channel .metadata img {
+.info .channel .metadata img {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
   margin: calc(var(--padding) / 2);
 }
 
-.channel .metadata .info {
+.info .channel .metadata .info {
   display: flex;
   flex-direction: column;
 }
 
-.channel .metadata .info .name {
+.info .channel .metadata .info .name {
   font-size: var(--font-medium);
 }
 
-.channel .metadata .info .subscribers {
+.info .channel .metadata .info .subscribers {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
 
-.channel .subscribe {
+.info .channel .subscribe {
   font-family: "Roboto Condensed", sans-serif;
   color: var(--white-color);
   font-size: var(--font-medium);
   font-weight: 550;
 }
 
-.channel button {
+.info .channel button {
   background-color: var(--red-color);
   margin: calc(var(--padding) / 1.5) 0;
   padding: 0 14px;
 }
 
+/* INFO > DESCIPTION */
 .info .description {
   padding: 20px;
   color: var(--font-color);
@@ -219,7 +222,7 @@ header .icons .fa-search {
 
 }
 
-/* upNext */
+/* UP NEXT */
 
 .upNext {
   padding: 0 var(--padding);
@@ -257,6 +260,11 @@ header .icons .fa-search {
 .upNext .item .info .title {
   font-size: var(--font-medium);
   margin-bottom: 3px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
 }
 
 .upNext .item .info .name {
@@ -271,8 +279,10 @@ header .icons .fa-search {
 
 .upNext .item .moreBtn {
   flex: 1 1 5%;
+  color: var(--grey-dark-color);
 }
 
+/* INFO AND UPNEXT */
 .infoAndUpNext {
   display: flex;
   flex-direction: column;
@@ -309,5 +319,8 @@ header .icons .fa-search {
 @media screen and (min-width: 1200px) {
   .infoAndUpNext .upNext .item .title {
   font-size: var(--font-large);
+  }
+  .infoAndUpNext .upNext .item .name {
+    font-size: var(--font-medium);
   }
 }
