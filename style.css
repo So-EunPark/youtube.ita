@@ -86,8 +86,6 @@ header .icons .fa-ellipsis-v{
 
 /* VIDEO PLAYER */
 .player {
-  position: sticky;
-  top: 0;
   text-align: center;
   background-color: var(--black-color);
 }
