@@ -54,23 +54,34 @@ header {
   color: var(--white-color);
 }
 
+header .logo>span{
+  cursor: pointer;
+}
+
 header .logo {
   font-family: "Oswald", sans-serif;
   font-size: var(--font-extra-large);
-  font-weight: ;
 }
 
 header .logo .fa-bars{
   font-size: var(--font-large);
   margin-right: var(--padding);
+  cursor: pointer;
 }
 
 header .logo .fa-youtube {
   color: var(--logo-red-color);
+  cursor: pointer;
 }
 
 header .icons .fa-search {
   margin-right: var(--padding);
+  cursor: pointer;
+}
+
+header .icons .fa-ellipsis-v{
+  margin-right: var(--padding);
+  cursor: pointer;
 }
 
 /* VIDEO PLAYER */
@@ -97,10 +108,12 @@ header .icons .fa-search {
   font-size: var(--font-medium);
   color: var(--blue-color);
   margin-bottom: 3px;
+  
 }
 
 .info .metadata .hashtags li {
   margin-right: var(--padding);
+  cursor: pointer;
 }
 
 .info .metadata .titleAndButton {
@@ -109,6 +122,7 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton .title {
   font-size: var(--font-large);
+  cursor: pointer;
 }
 
 .info .metadata .titleAndButton .title.clamp {
@@ -123,6 +137,7 @@ header .icons .fa-search {
   height: 100%;
   transition: transform 300ms; ease-in-out;
 }
+
 .info .metadata .titleAndButton .moreBtn.clicked {
   transform: rotate(180deg);
 }
@@ -176,6 +191,7 @@ header .icons .fa-search {
   height: var(--avatar-size);
   border-radius: 50%;
   margin: calc(var(--padding) / 2);
+  cursor: pointer;
 }
 
 .info .channel .metadata .info {
@@ -185,6 +201,7 @@ header .icons .fa-search {
 
 .info .channel .metadata .info .name {
   font-size: var(--font-medium);
+  cursor: pointer;
 }
 
 .info .channel .metadata .info .subscribers {
@@ -197,6 +214,12 @@ header .icons .fa-search {
   color: var(--white-color);
   font-size: var(--font-medium);
   font-weight: 550;
+}
+
+.info .channel .subscribe.clicked{
+  background-color: var(--grey-light-color);
+  color: var(--font-color);
+  font-weight: bolder;
 }
 
 .info .channel button {
@@ -244,6 +267,7 @@ header .icons .fa-search {
   max-width: 300px;
   min-width: 200px;
   margin-right: var(--padding);
+  cursor: pointer;
 }
 
 .upNext .item .img img {
@@ -265,11 +289,13 @@ header .icons .fa-search {
   -webkit-line-clamp: 2;
   overflow: hidden;
   margin-right: var(--padding);
+  cursor: pointer;
 }
 
 .upNext .item .info .name {
   font-size: var(--font-small);
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .upNext .item .info .views {
